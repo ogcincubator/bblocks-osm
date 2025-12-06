@@ -1,0 +1,12 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix osm: <https://example.com/osm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a osm:Motorway ;
+    rdfs:label "A-7 Autovía del Mediterráneo" ;
+    dct:source "survey 2024-09" ;
+    osm:hasLaneCount 3 ;
+    osm:hasSurfaceType <https://example.com/osm/surfaces/asphalt> ;
+    osm:isOneWay "yes" .
+

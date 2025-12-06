@@ -1,0 +1,11 @@
+{
+  "highway": "residential",
+  "name": "Elm Street",
+  "surface": "gravel",
+  "lanes": 2,
+  "oneway": false,
+  "maxspeed": "30",
+  "sidewalk": "both",
+  "cycleway": "shared",
+  "source": "OSM + field check"
+}

@@ -1,0 +1,9 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix osm: <https://example.com/osm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+[] a osm:Steps ;
+    rdfs:label "Station Stairway" ;
+    dct:source "local authority asset register" ;
+    osm:hasSurfaceType <https://example.com/osm/surfaces/stone> .
+

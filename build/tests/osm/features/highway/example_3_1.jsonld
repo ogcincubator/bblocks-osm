@@ -1,0 +1,12 @@
+{
+  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld",
+  "highway": "residential",
+  "name": "Elm Street",
+  "surface": "gravel",
+  "lanes": 2,
+  "oneway": false,
+  "maxspeed": "30",
+  "sidewalk": "both",
+  "cycleway": "shared",
+  "source": "OSM + field check"
+}

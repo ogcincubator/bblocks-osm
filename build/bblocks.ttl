@@ -1,0 +1,84 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N264f065103dd452094e26f141e1b87be ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2025-12-06T16:10:45.657094"^^xsd:dateTime ;
+            prov:startedAtTime "2025-12-06T16:10:45.590517"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:9ce0867934f980945464fcbcf77740e36bdbd853" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/register.json> ] ;
+            prov:wasAssociatedWith _:N264f065103dd452094e26f141e1b87be ] .
+
+<bblocks://ogc.osm.features.highway> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Highway" ;
+    dct:abstract "This is used to describe roads and footpaths"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-12-06T14:07:00+01:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/bblock/ogc.osm.features.highway> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/generateddocs/json-full/osm/features/highway/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/generateddocs/markdown/osm/features/highway/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-12-06"^^xsd:date ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/> ;
+    skos:prefLabel "Highway" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/> ;
+    dcat:keyword "highways",
+        "open-street-maps",
+        "osm",
+        "roads",
+        "schemas" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/> a skos:ConceptScheme,
+        dcat:Catalog ;
+    rdfs:label "Building Blocks - OpenStreetMap features" ;
+    dct:abstract """This is a collection of building blocks related to OpenStreetMap features.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:modified "2025-12-06T16:10:45.288296"^^xsd:dateTime ;
+    owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
+    skos:hasTopConcept <bblocks://ogc.osm.features.highway> ;
+    skos:prefLabel "Building Blocks - OpenStreetMap features" ;
+    foaf:homepage <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/> ;
+    bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/report.html> .
+
+_:N264f065103dd452094e26f141e1b87be a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.5.3" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

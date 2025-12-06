@@ -1,0 +1,68 @@
+{
+  "name": "OpenStreetMap features",
+  "abstract": "This is a collection of building blocks related to OpenStreetMap features.\n",
+  "modified": "2025-12-06T16:10:45.288296",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"68167baf1c7280295a0aecc42e40ac421e1a4a6d",
+      "shortCommitId": "\"68167b",
+      "date": "2025-12-03T13:13:23+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/ogcincubator/bblocks-osm",
+  "gitHubRepository": "https://github.com/ogcincubator/bblocks-osm/blob/master/",
+  "baseURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/",
+  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/",
+  "validationReport": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/report.html",
+  "validationReportJson": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/report.json",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.osm.features.highway",
+      "name": "Highway",
+      "itemClass": "schema",
+      "abstract": "This is used to describe roads and footpaths",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-06T14:07:00+01:00",
+      "dateOfLastChange": "2025-12-06",
+      "register": "ogc-building-blocks-register",
+      "version": "0.1",
+      "tags": [
+        "osm",
+        "open-street-maps",
+        "schemas",
+        "highways",
+        "roads"
+      ],
+      "shaclShapes": {},
+      "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld",
+      "schema": {
+        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.yaml",
+        "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.json"
+      },
+      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/context.jsonld",
+      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-osm/blob/master/build/tests/osm/features/highway/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/generateddocs/markdown/osm/features/highway/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/generateddocs/json-full/osm/features/highway/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/bblock/ogc.osm.features.highway"
+        }
+      }
+    }
+  ],
+  "remoteCacheDir": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/_cache"
+}

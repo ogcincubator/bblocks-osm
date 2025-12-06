@@ -1,0 +1,11 @@
+{
+  "highway": "motorway",
+  "name": "A-7 Autov\u00eda del Mediterr\u00e1neo",
+  "surface": "asphalt",
+  "oneway": "yes",
+  "lanes": 3,
+  "maxspeed": "120",
+  "bridge": "no",
+  "tunnel": "no",
+  "source": "survey 2024-09"
+}

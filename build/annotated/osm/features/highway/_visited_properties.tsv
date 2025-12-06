@@ -1,0 +1,13 @@
+path	@id
+/highway	@type
+/oneway	https://example.com/osm/isOneWay
+/surface	https://example.com/osm/hasSurfaceType
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/lanes	https://example.com/osm/hasLaneCount
+/maxspeed	
+/bridge	
+/tunnel	
+/cycleway	
+/sidewalk	
+/access	
+/source	http://purl.org/dc/terms/source

@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "highway": {
+      "@context": {
+        "motorway": "osm:Motorway",
+        "trunk": "osm:Trunk",
+        "primary": "osm:Primary",
+        "secondary": "osm:Secondary",
+        "tertiary": "osm:Tertiary",
+        "unclassified": "osm:Unclassified",
+        "residential": "osm:Residential",
+        "service": "osm:Service",
+        "motorwayLink": "osm:MotorwayLink",
+        "trunkLink": "osm:TrunkLink",
+        "primaryLink": "osm:PrimaryLink",
+        "secondaryLink": "osm:SecondaryLink",
+        "tertiaryLink": "osm:TertiaryLink",
+        "living_street": "osm:LivingStreet",
+        "pedestrian": "osm:Pedestrian",
+        "busway": "osm:Busway",
+        "bus_guideway": "osm:BusGuideway",
+        "bus_stop": "osm:BusStop",
+        "bus_station": "osm:BusStation",
+        "raceway": "osm:Raceway",
+        "footway": "osm:Footway",
+        "path": "osm:Path",
+        "track": "osm:Track",
+        "cycleway": "osm:Cycleway",
+        "bridleway": "osm:Bridleway",
+        "steps": "osm:Steps",
+        "crossing": "osm:Crossing",
+        "road": "osm:Road",
+        "construction": "osm:Construction"
+      },
+      "@id": "@type",
+      "@type": "@id"
+    },
+    "oneway": "osm:isOneWay",
+    "surface": {
+      "@context": {
+        "@base": "https://example.com/osm/surfaces/"
+      },
+      "@id": "osm:hasSurfaceType",
+      "@type": "@id"
+    },
+    "name": "rdfs:label",
+    "lanes": "osm:hasLaneCount",
+    "maxspeed": {},
+    "bridge": {},
+    "tunnel": {},
+    "cycleway": {},
+    "sidewalk": {},
+    "access": {},
+    "source": "dct:source",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "osm": "https://example.com/osm/",
+    "dct": "http://purl.org/dc/terms/",
+    "@version": 1.1
+  }
+}

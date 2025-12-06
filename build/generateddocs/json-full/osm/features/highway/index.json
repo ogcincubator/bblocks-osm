@@ -1,0 +1,97 @@
+
+
+{
+  "itemIdentifier": "ogc.osm.features.highway",
+  "name": "Highway",
+  "itemClass": "schema",
+  "abstract": "This is used to describe roads and footpaths",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-06T14:07:00+01:00",
+  "dateOfLastChange": "2025-12-06",
+  "register": "ogc-building-blocks-register",
+  "version": "0.1",
+  "tags": [
+    "osm",
+    "open-street-maps",
+    "schemas",
+    "highways",
+    "roads"
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/bblocks-osm/blob/master/build/tests/osm/features/highway/",
+  "examples": [
+    {
+      "title": "Motorway",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"highway\": \"motorway\",\n  \"name\": \"A-7 Autov\u00eda del Mediterr\u00e1neo\",\n  \"surface\": \"asphalt\",\n  \"oneway\": \"yes\",\n  \"lanes\": 3,\n  \"maxspeed\": \"120\",\n  \"bridge\": \"no\",\n  \"tunnel\": \"no\",\n  \"source\": \"survey 2024-09\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"motorway\",\n  \"name\": \"A-7 Autov\\u00eda del Mediterr\\u00e1neo\",\n  \"surface\": \"asphalt\",\n  \"oneway\": \"yes\",\n  \"lanes\": 3,\n  \"maxspeed\": \"120\",\n  \"bridge\": \"no\",\n  \"tunnel\": \"no\",\n  \"source\": \"survey 2024-09\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix osm: <https://example.com/osm/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a osm:Motorway ;\n    rdfs:label \"A-7 Autov\u00eda del Mediterr\u00e1neo\" ;\n    dct:source \"survey 2024-09\" ;\n    osm:hasLaneCount 3 ;\n    osm:hasSurfaceType <https://example.com/osm/surfaces/asphalt> ;\n    osm:isOneWay \"yes\" .\n\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Steps",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"highway\": \"steps\",\n  \"name\": \"Station Stairway\",\n  \"surface\": \"stone\",\n  \"source\": \"local authority asset register\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"steps\",\n  \"name\": \"Station Stairway\",\n  \"surface\": \"stone\",\n  \"source\": \"local authority asset register\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix osm: <https://example.com/osm/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n[] a osm:Steps ;\n    rdfs:label \"Station Stairway\" ;\n    dct:source \"local authority asset register\" ;\n    osm:hasSurfaceType <https://example.com/osm/surfaces/stone> .\n\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_2_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Residential road",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"highway\": \"residential\",\n  \"name\": \"Elm Street\",\n  \"surface\": \"gravel\",\n  \"lanes\": 2,\n  \"oneway\": false,\n  \"maxspeed\": \"30\",\n  \"sidewalk\": \"both\",\n  \"cycleway\": \"shared\",\n  \"source\": \"OSM + field check\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_3_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"residential\",\n  \"name\": \"Elm Street\",\n  \"surface\": \"gravel\",\n  \"lanes\": 2,\n  \"oneway\": false,\n  \"maxspeed\": \"30\",\n  \"sidewalk\": \"both\",\n  \"cycleway\": \"shared\",\n  \"source\": \"OSM + field check\"\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_3_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix osm: <https://example.com/osm/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a osm:Residential ;\n    rdfs:label \"Elm Street\" ;\n    dct:source \"OSM + field check\" ;\n    osm:hasLaneCount 2 ;\n    osm:hasSurfaceType <https://example.com/osm/surfaces/gravel> ;\n    osm:isOneWay false .\n\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_3_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: OpenStreetMap Highway Tag Collection\ndescription: Proto schema for validating a subset of OSM 'highway' tags on ways/relations/nodes.\ntype: object\nproperties:\n  highway:\n    type: string\n    description: Main classifier for roads, paths, and road-related features.\n    enum:\n    - motorway\n    - trunk\n    - primary\n    - secondary\n    - tertiary\n    - unclassified\n    - residential\n    - service\n    - motorway_link\n    - trunk_link\n    - primary_link\n    - secondary_link\n    - tertiary_link\n    - living_street\n    - pedestrian\n    - busway\n    - bus_guideway\n    - bus_stop\n    - bus_station\n    - raceway\n    - footway\n    - path\n    - track\n    - cycleway\n    - bridleway\n    - steps\n    - crossing\n    - road\n    - construction\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n    x-jsonld-extra-terms:\n      motorway: https://example.com/osm/Motorway\n      trunk: https://example.com/osm/Trunk\n      primary: https://example.com/osm/Primary\n      secondary: https://example.com/osm/Secondary\n      tertiary: https://example.com/osm/Tertiary\n      unclassified: https://example.com/osm/Unclassified\n      residential: https://example.com/osm/Residential\n      service: https://example.com/osm/Service\n      motorwayLink: https://example.com/osm/MotorwayLink\n      trunkLink: https://example.com/osm/TrunkLink\n      primaryLink: https://example.com/osm/PrimaryLink\n      secondaryLink: https://example.com/osm/SecondaryLink\n      tertiaryLink: https://example.com/osm/TertiaryLink\n      living_street: https://example.com/osm/LivingStreet\n      pedestrian: https://example.com/osm/Pedestrian\n      busway: https://example.com/osm/Busway\n      bus_guideway: https://example.com/osm/BusGuideway\n      bus_stop: https://example.com/osm/BusStop\n      bus_station: https://example.com/osm/BusStation\n      raceway: https://example.com/osm/Raceway\n      footway: https://example.com/osm/Footway\n      path: https://example.com/osm/Path\n      track: https://example.com/osm/Track\n      cycleway: https://example.com/osm/Cycleway\n      bridleway: https://example.com/osm/Bridleway\n      steps: https://example.com/osm/Steps\n      crossing: https://example.com/osm/Crossing\n      road: https://example.com/osm/Road\n      construction: https://example.com/osm/Construction\n  name:\n    type: string\n    description: Human-readable street/path name.\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  surface:\n    type: string\n    description: Physical surface type.\n    enum:\n    - asphalt\n    - concrete\n    - paved\n    - unpaved\n    - gravel\n    - compacted\n    - dirt\n    - ground\n    - grass\n    - cobblestone\n    - sett\n    - stone\n    - wood\n    x-jsonld-id: https://example.com/osm/hasSurfaceType\n    x-jsonld-type: '@id'\n    x-jsonld-base: https://example.com/osm/surfaces/\n  lanes:\n    type: integer\n    minimum: 1\n    description: Number of marked lanes.\n    x-jsonld-id: https://example.com/osm/hasLaneCount\n  oneway:\n    type:\n    - string\n    - boolean\n    description: One-way traffic indicator.\n    enum:\n    - 'yes'\n    - 'no'\n    - '-1'\n    - true\n    - false\n    x-jsonld-id: https://example.com/osm/isOneWay\n  maxspeed:\n    type: string\n    description: Posted or implicit max speed.\n    pattern: ^(\\d+\\s?(km/h|mph)?|[A-Z]{2}:[A-Za-z0-9_\\-]+)$\n  bridge:\n    type: string\n    enum:\n    - 'yes'\n    - 'no'\n  tunnel:\n    type: string\n    enum:\n    - 'yes'\n    - 'no'\n  cycleway:\n    type: string\n    enum:\n    - lane\n    - track\n    - opposite_lane\n    - opposite_track\n    - share_busway\n    - shared\n    - 'no'\n  sidewalk:\n    type: string\n    enum:\n    - both\n    - left\n    - right\n    - separate\n    - 'no'\n  access:\n    type: string\n    enum:\n    - 'yes'\n    - 'no'\n    - private\n    - destination\n    - permissive\n    - customers\n    - delivery\n  source:\n    type: string\n    description: Provenance for tags.\n    x-jsonld-id: http://purl.org/dc/terms/source\nrequired:\n- highway\noneOf:\n- properties:\n    highway:\n      const: motorway\n      x-jsonld-id: '@type'\n      x-jsonld-type: '@id'\n    oneway:\n      enum:\n      - 'yes'\n      - true\n      description: Motorways are typically one-way per carriageway.\n      x-jsonld-id: https://example.com/osm/isOneWay\n- properties:\n    highway:\n      const: steps\n      x-jsonld-id: '@type'\n      x-jsonld-type: '@id'\n    surface:\n      enum:\n      - concrete\n      - stone\n      - wood\n      description: Common surfaces for steps.\n      x-jsonld-id: https://example.com/osm/hasSurfaceType\n      x-jsonld-type: '@id'\n      x-jsonld-base: https://example.com/osm/surfaces/\n- not:\n    properties:\n      highway:\n        enum:\n        - motorway\n        - steps\n$comment: 'Notes:\n\n  - Enumerations reflect commonly documented values on the OSM wiki (Map features\n  + Key:highway).\n\n  - Many specialized keys (e.g., lanes:forward/backward, maxspeed:conditional) are\n  omitted for simplicity.\n\n  - Consider replacing tight enums with patterns or merging editor presets for broader\n  coverage.\n\n  '\nx-jsonld-prefixes:\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  osm: https://example.com/osm/\n  dct: http://purl.org/dc/terms/\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-osm",
+  "gitPath": "_sources/features/highway"
+}
