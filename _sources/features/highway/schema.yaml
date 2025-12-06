@@ -1,0 +1,133 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: "OpenStreetMap Highway Tag Collection"
+description: "Proto schema for validating a subset of OSM 'highway' tags on ways/relations/nodes."
+type: object
+
+properties:
+  highway:
+    type: string
+    description: "Main classifier for roads, paths, and road-related features."
+    enum:
+      # Roads
+      - motorway
+      - trunk
+      - primary
+      - secondary
+      - tertiary
+      - unclassified
+      - residential
+      - service
+      # Link roads
+      - motorway_link
+      - trunk_link
+      - primary_link
+      - secondary_link
+      - tertiary_link
+      # Special types
+      - living_street
+      - pedestrian
+      - busway
+      - bus_guideway
+      - bus_stop
+      - bus_station
+      - raceway
+      # Paths
+      - footway
+      - path
+      - track
+      - cycleway
+      - bridleway
+      - steps
+      # Crossings
+      - crossing
+      # Other
+      - road
+      - construction
+
+  name:
+    type: string
+    description: "Human-readable street/path name."
+
+  surface:
+    type: string
+    description: "Physical surface type."
+    enum:
+      - asphalt
+      - concrete
+      - paved
+      - unpaved
+      - gravel
+      - compacted
+      - dirt
+      - ground
+      - grass
+      - cobblestone
+      - sett
+      - stone
+      - wood
+
+  lanes:
+    type: integer
+    minimum: 1
+    description: "Number of marked lanes."
+
+  oneway:
+    type: [string, boolean]
+    description: "One-way traffic indicator."
+    enum: ["yes", "no", "-1", true, false]
+
+  maxspeed:
+    type: string
+    description: "Posted or implicit max speed."
+    pattern: "^(\\d+\\s?(km/h|mph)?|[A-Z]{2}:[A-Za-z0-9_\\-]+)$"
+
+  bridge:
+    type: string
+    enum: ["yes", "no"]
+
+  tunnel:
+    type: string
+    enum: ["yes", "no"]
+
+  cycleway:
+    type: string
+    enum: ["lane", "track", "opposite_lane", "opposite_track", "share_busway", "shared", "no"]
+
+  sidewalk:
+    type: string
+    enum: ["both", "left", "right", "separate", "no"]
+
+  access:
+    type: string
+    enum: ["yes", "no", "private", "destination", "permissive", "customers", "delivery"]
+
+  source:
+    type: string
+    description: "Provenance for tags."
+
+required:
+  - highway
+
+oneOf:
+  - properties:
+      highway:
+        const: motorway
+      oneway:
+        enum: ["yes", true]
+        description: "Motorways are typically one-way per carriageway."
+  - properties:
+      highway:
+        const: steps
+      surface:
+        enum: ["concrete", "stone", "wood"]
+        description: "Common surfaces for steps."
+  - not:
+      properties:
+        highway:
+          enum: [motorway, steps]
+
+$comment: |
+  Notes:
+  - Enumerations reflect commonly documented values on the OSM wiki (Map features + Key:highway).
+  - Many specialized keys (e.g., lanes:forward/backward, maxspeed:conditional) are omitted for simplicity.
+  - Consider replacing tight enums with patterns or merging editor presets for broader coverage.

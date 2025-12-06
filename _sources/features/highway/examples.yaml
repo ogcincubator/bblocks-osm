@@ -1,0 +1,43 @@
+examples:
+  - title: Motorway
+    snippets:
+      - language: json
+        code: |-
+          {
+            "highway": "motorway",
+            "name": "A-7 Autovía del Mediterráneo",
+            "surface": "asphalt",
+            "oneway": "yes",
+            "lanes": 3,
+            "maxspeed": "120",
+            "bridge": "no",
+            "tunnel": "no",
+            "source": "survey 2024-09"
+          }
+
+  - title: Steps
+    snippets:
+      - language: json
+        code: |-        
+          {
+            "highway": "steps",
+            "name": "Station Stairway",
+            "surface": "stone",
+            "source": "local authority asset register"
+          }
+
+  - title: Residential road
+    snippets:
+      - language: json
+        code: |-
+          {
+            "highway": "residential",
+            "name": "Elm Street",
+            "surface": "gravel",
+            "lanes": 2,
+            "oneway": false,
+            "maxspeed": "30",
+            "sidewalk": "both",
+            "cycleway": "shared",
+            "source": "OSM + field check"
+          }

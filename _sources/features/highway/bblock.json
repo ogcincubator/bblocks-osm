@@ -1,0 +1,17 @@
+{
+  "name": "Highway",
+  "itemClass": "schema",
+  "abstract": "This is used to describe roads and footpaths",
+  "status": "under-development",
+  "dateTimeAddition": "2025-12-06T14:07:00+01:00",
+  "dateOfLastChange": "2025-12-06",
+  "register": "ogc-building-blocks-register",
+  "version": "0.1",
+  "tags": [
+    "osm",
+    "open-street-maps",
+    "schemas",
+    "highways",
+    "roads"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "osm": "https://example.com/osm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dct": "http://purl.org/dc/terms/",
+    "name": "rdfs:label",
+    "highway": {
+      "@id": "@type",
+      "@type": "@id",
+      "@context": {
+        "motorway": "osm:Motorway",
+        "trunk": "osm:Trunk",
+        "primary": "osm:Primary",
+        "secondary": "osm:Secondary",
+        "tertiary": "osm:Tertiary",
+        "unclassified": "osm:Unclassified",
+        "residential": "osm:Residential",
+        "service": "osm:Service",
+        "motorwayLink": "osm:MotorwayLink",
+        "trunkLink": "osm:TrunkLink",
+        "primaryLink": "osm:PrimaryLink",
+        "secondaryLink": "osm:SecondaryLink",
+        "tertiaryLink": "osm:TertiaryLink",
+        "living_street": "osm:LivingStreet",
+        "pedestrian": "osm:Pedestrian",
+        "busway": "osm:Busway",
+        "bus_guideway": "osm:BusGuideway",
+        "bus_stop": "osm:BusStop",
+        "bus_station": "osm:BusStation",
+        "raceway": "osm:Raceway",
+        "footway": "osm:Footway",
+        "path": "osm:Path",
+        "track": "osm:Track",
+        "cycleway": "osm:Cycleway",
+        "bridleway": "osm:Bridleway",
+        "steps": "osm:Steps",
+        "crossing": "osm:Crossing",
+        "road": "osm:Road",
+        "construction": "osm:Construction"
+      }
+    },
+    "surface": {
+      "@id": "osm:hasSurfaceType",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://example.com/osm/surfaces/"
+      }
+    },
+    "lanes": "osm:hasLaneCount",
+    "oneway": "osm:isOneWay",
+    "source": "dct:source"
+  }
+}
