@@ -18,14 +18,14 @@
     "roads"
   ],
   "shaclShapes": {},
-  "ldContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld",
+  "ldContext": "https://ogcincubator.github.io/bblocks-osm/build/annotated/osm/features/highway/context.jsonld",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/bblocks-osm/build/annotated/osm/features/highway/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-osm/build/annotated/osm/features/highway/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/schema.yaml",
-  "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/_sources/features/highway/",
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-osm/_sources/features/highway/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-osm/_sources/features/highway/context.jsonld",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-osm/_sources/features/highway/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/bblocks-osm/blob/master/build/tests/osm/features/highway/",
@@ -36,17 +36,17 @@
         {
           "language": "json",
           "code": "{\n  \"highway\": \"motorway\",\n  \"name\": \"A-7 Autov\u00eda del Mediterr\u00e1neo\",\n  \"surface\": \"asphalt\",\n  \"oneway\": \"yes\",\n  \"lanes\": 3,\n  \"maxspeed\": \"120\",\n  \"bridge\": \"no\",\n  \"tunnel\": \"no\",\n  \"source\": \"survey 2024-09\"\n}",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_1_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"motorway\",\n  \"name\": \"A-7 Autov\\u00eda del Mediterr\\u00e1neo\",\n  \"surface\": \"asphalt\",\n  \"oneway\": \"yes\",\n  \"lanes\": 3,\n  \"maxspeed\": \"120\",\n  \"bridge\": \"no\",\n  \"tunnel\": \"no\",\n  \"source\": \"survey 2024-09\"\n}",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-osm/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"motorway\",\n  \"name\": \"A-7 Autov\\u00eda del Mediterr\\u00e1neo\",\n  \"surface\": \"asphalt\",\n  \"oneway\": \"yes\",\n  \"lanes\": 3,\n  \"maxspeed\": \"120\",\n  \"bridge\": \"no\",\n  \"tunnel\": \"no\",\n  \"source\": \"survey 2024-09\"\n}",
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix osm: <https://example.com/osm/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a osm:Motorway ;\n    rdfs:label \"A-7 Autov\u00eda del Mediterr\u00e1neo\" ;\n    dct:source \"survey 2024-09\" ;\n    osm:hasLaneCount 3 ;\n    osm:hasSurfaceType <https://example.com/osm/surfaces/asphalt> ;\n    osm:isOneWay \"yes\" .\n\n",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_1_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_1_1.ttl"
         }
       ]
     },
@@ -56,17 +56,17 @@
         {
           "language": "json",
           "code": "{\n  \"highway\": \"steps\",\n  \"name\": \"Station Stairway\",\n  \"surface\": \"stone\",\n  \"source\": \"local authority asset register\"\n}",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_2_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_2_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"steps\",\n  \"name\": \"Station Stairway\",\n  \"surface\": \"stone\",\n  \"source\": \"local authority asset register\"\n}",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_2_1.jsonld"
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-osm/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"steps\",\n  \"name\": \"Station Stairway\",\n  \"surface\": \"stone\",\n  \"source\": \"local authority asset register\"\n}",
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_2_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix osm: <https://example.com/osm/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n[] a osm:Steps ;\n    rdfs:label \"Station Stairway\" ;\n    dct:source \"local authority asset register\" ;\n    osm:hasSurfaceType <https://example.com/osm/surfaces/stone> .\n\n",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_2_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_2_1.ttl"
         }
       ]
     },
@@ -76,17 +76,17 @@
         {
           "language": "json",
           "code": "{\n  \"highway\": \"residential\",\n  \"name\": \"Elm Street\",\n  \"surface\": \"gravel\",\n  \"lanes\": 2,\n  \"oneway\": false,\n  \"maxspeed\": \"30\",\n  \"sidewalk\": \"both\",\n  \"cycleway\": \"shared\",\n  \"source\": \"OSM + field check\"\n}",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_3_1.json"
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_3_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"residential\",\n  \"name\": \"Elm Street\",\n  \"surface\": \"gravel\",\n  \"lanes\": 2,\n  \"oneway\": false,\n  \"maxspeed\": \"30\",\n  \"sidewalk\": \"both\",\n  \"cycleway\": \"shared\",\n  \"source\": \"OSM + field check\"\n}",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_3_1.jsonld"
+          "code": "{\n  \"@context\": \"https://ogcincubator.github.io/bblocks-osm/build/annotated/osm/features/highway/context.jsonld\",\n  \"highway\": \"residential\",\n  \"name\": \"Elm Street\",\n  \"surface\": \"gravel\",\n  \"lanes\": 2,\n  \"oneway\": false,\n  \"maxspeed\": \"30\",\n  \"sidewalk\": \"both\",\n  \"cycleway\": \"shared\",\n  \"source\": \"OSM + field check\"\n}",
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_3_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix osm: <https://example.com/osm/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a osm:Residential ;\n    rdfs:label \"Elm Street\" ;\n    dct:source \"OSM + field check\" ;\n    osm:hasLaneCount 2 ;\n    osm:hasSurfaceType <https://example.com/osm/surfaces/gravel> ;\n    osm:isOneWay false .\n\n",
-          "url": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/tests/osm/features/highway/example_3_1.ttl"
+          "url": "https://ogcincubator.github.io/bblocks-osm/build/tests/osm/features/highway/example_3_1.ttl"
         }
       ]
     }

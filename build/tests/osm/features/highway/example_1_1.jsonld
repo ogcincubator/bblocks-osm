@@ -1,5 +1,5 @@
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/bblocks-osm/undefined/build/annotated/osm/features/highway/context.jsonld",
+  "@context": "https://ogcincubator.github.io/bblocks-osm/build/annotated/osm/features/highway/context.jsonld",
   "highway": "motorway",
   "name": "A-7 Autov\u00eda del Mediterr\u00e1neo",
   "surface": "asphalt",
